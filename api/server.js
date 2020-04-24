@@ -13,7 +13,7 @@ server.use(express.json());
 server.use("/api", apiRouter);
 
 server.get("/", (req, res) => {
-  res.send("Quake Online!");
+  res.send({ api:"Quake Online!"});
 });
 
 module.exports = server;
